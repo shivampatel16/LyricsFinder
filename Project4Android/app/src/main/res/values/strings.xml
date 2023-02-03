@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LyricsFinder</string>
+    <string name="song_name_placeholder">Enter name of song</string>
+    <string name="artist_name_placeholder">Enter name of artist</string>
+    <string name="search_button_text">Search Lyrics</string>
+    <string name="search_title">Welcome To LyricsFinder</string>
+    <string name="search_again_button_text">Search Again</string>
+    <string name="error_title">Error!!</string>
+    <string name="cancel">Cancel</string>
+    <string name="service_unavailable">Service Unavailable</string>
+    <string name="no_internet">No Internet!</string>
+</resources>

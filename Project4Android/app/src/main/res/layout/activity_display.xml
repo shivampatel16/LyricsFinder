@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Authors: Shivam Patel and Gautam Naik
+Andrew IDs: shpatel, gnaik
+Emails: shpatel@cmu.edu, gnaik@andrew.cmu.edu
+Last Modified: November 21, 2022
+File: activity_display.java
+Part Of: Project4Task2
+
+This XML file shows the styling components of the display activity
+It contains the following components inside a LinearLayout:
+TextView: For the title and lyrics
+Button: For going back to search screen
+ScrollView: For vertical scrolling of lyrics
+HorizontalScrollView: For horizontal scrolling of lyrics
+-->
+
+<!-- LinearLayout shows the components inside it in a linear(top down) manner-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- TextView: For the title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_title"
+        android:textColor="@color/maroon"
+        android:textSize="30sp" />
+    <!--Button: For going back to search screen -->
+    <Button
+        android:id="@+id/searchAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/maroon"
+        android:text="@string/search_again_button_text" />
+    <!-- HorizontalScrollView: For horizontal scrolling of lyrics-->
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/stroke_bg"
+        android:scrollbars="none">
+        <!--ScrollView: For vertical scrolling of lyrics -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <!--TextView: For the title and lyrics-->
+            <TextView
+                android:id="@+id/lyrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Authors: Shivam Patel and Gautam Naik
+Andrew IDs: shpatel, gnaik
+Emails: shpatel@cmu.edu, gnaik@andrew.cmu.edu
+Last Modified: November 21, 2022
+File: activity_search.java
+Part Of: Project4Task2
+
+This XML file shows the styling components of the search activity
+It contains the following components inside a LinearLayout:
+TextView: For the title
+Button: To search for lyrics and navigate to the next(display) screen.
+EditText: For the user to enter song and artist name
+ImageView: For showing the image
+-->
+
+<!-- LinearLayout shows the components inside it in a linear(top down) manner-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- TextView: For the title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/search_title"
+        android:textColor="@color/maroon"
+        android:textSize="30sp" />
+    <!-- EditText: For the user to enter song and artist name -->
+    <EditText
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:hint="@string/song_name_placeholder"
+        android:inputType="text"
+        android:minWidth="200dp"
+        android:textSize="20sp" />
+
+    <!-- EditText: For the user to enter song and artist name -->
+    <EditText
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:hint="@string/artist_name_placeholder"
+        android:inputType="text"
+        android:minWidth="200dp"
+        android:textSize="20sp" />
+    <!-- Button: To search for lyrics and navigate to the next(display) screen.-->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/maroon"
+        android:text="@string/search_button_text" />
+    <!--ImageView: For showing the image -->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/lyrics" />
+</LinearLayout>
